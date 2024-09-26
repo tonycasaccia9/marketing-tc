@@ -499,7 +499,7 @@ h3 {
 /* Tabbed section */
 
 #section--4 {
-  background-color: var(--color-accent-background);
+  background-color: var(--color-light);
 }
 
 .tabs {
@@ -515,6 +515,11 @@ h3 {
 
 .tabs__btn:last-child {
   margin-right: 0;
+}
+
+.tabs__btn--active {
+  transform: translateY(-20%);
+  background-color: var(--color-accent);
 }
 
 .tabs__btns {
@@ -552,7 +557,4 @@ h3 {
 .tabs__icon {
   display: flex;
   justify-content: center;
-}
-.tabs__btn--active {
-  transform: translateY(-20%);
 }
