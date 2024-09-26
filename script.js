@@ -2,6 +2,7 @@
 
 // Elements
 const header = document.querySelector(".header");
+const nav = document.querySelector(".nav");
 const overview = document.querySelector("#overview");
 
 const navLinks = document.querySelector(".nav__links");
@@ -27,6 +28,25 @@ allSections.forEach(function (section) {
   section.classList.add("section--hidden");
   sectionObserver.observe(section);
 });
+
+//////////////////////////////////////////
+// Sticky nav
+
+const navHeight = nav.getBoundingClientRect().height;
+const stickyNav = function (entries, observer) {
+  const [entry] = entries;
+  console.log(entry);
+  if (!entry.isIntersecting) {
+    nav.classList.add("sticky");
+  } else nav.classList.remove("sticky");
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+headerObserver.observe(header);
 
 //////////////////////////////////////////
 // Nav Button Hover effect
