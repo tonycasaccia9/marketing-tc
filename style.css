@@ -67,6 +67,14 @@
   color: var(--color-);
 }
 
+p {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 2.4;
+}
+
 /* Nav */
 
 .logo {
@@ -299,9 +307,39 @@ h3 {
   gap: 2rem;
 }
 
-/* Features / Section 1 */
-
+/* About Me Section 1 */
 #section--1 {
+  background-color: var(--color-light);
+}
+
+.about__heading {
+  font-size: 2.2rem;
+}
+
+.about__content {
+  height: 30rem;
+  max-width: 120rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8rem;
+  margin: 2rem auto;
+}
+
+.about__content p {
+  grid-column: 1;
+  margin-top: 4rem;
+}
+
+.about__image {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  border-radius: 8px;
+}
+
+/* Features / Section 2 */
+
+#section--2 {
   background-color: #a6c6e9;
 }
 
@@ -346,7 +384,7 @@ h3 {
 }
 
 /* Slider */
-#section--2 {
+#section--3 {
   background-color: var(--color-background);
 }
 
@@ -460,7 +498,7 @@ h3 {
 
 /* Tabbed section */
 
-#section--3 {
+#section--4 {
   background-color: var(--color-accent-background);
 }
 
