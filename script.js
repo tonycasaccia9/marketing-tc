@@ -4,6 +4,7 @@ import * as model from "./model.js";
 import contactView from "./views/contactView.js";
 import navToggleView from "./views/navToggleView.js";
 import sliderView from "./views/sliderView.js";
+import eyebrowsView from "./views/eyebrowsView.js";
 
 // Elements
 const header = document.querySelector(".header");

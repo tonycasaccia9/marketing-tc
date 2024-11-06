@@ -76,7 +76,7 @@
   }
 
   /* Slider */
-  .slider__content {
+  #section--3 .slider__content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -253,8 +253,18 @@
   }
   .header__title {
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     /* height: 80vh; */
   }
+
+  .header__image {
+    margin-top: 3rem;
+    /* display: none; */
+  }
+
   .header__title .btn {
     font-size: 1.4rem;
   }
