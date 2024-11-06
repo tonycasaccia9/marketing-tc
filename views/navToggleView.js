@@ -31,7 +31,9 @@ class NavToggleView {
       this.navToggle.addEventListener(ev, this.toggleNav.bind(this));
     });
 
-    this.parentEl.addEventListener("mouseleave", this.hideNav.bind(this));
+    ["mouseleave", "click"].forEach((ev) =>
+      this.parentEl.addEventListener(ev, this.hideNav.bind(this))
+    );
   }
 }
 

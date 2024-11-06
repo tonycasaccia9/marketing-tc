@@ -184,14 +184,15 @@
   }
 
   #section--2 .features__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     align-self: center;
     text-align: center;
   }
 
-  #section--2 .icon {
-    justify-self: center;
-    align-self: center;
-  }
   /* Slider */
 
   #section--3 .slider__heading {
@@ -234,6 +235,7 @@
     max-width: 15rem;
     cursor: pointer;
     src: url("/img/logo-small.png");
+    margin-left: 0;
   }
 
   .nav__links {
@@ -247,13 +249,14 @@
   /* Header */
 
   .header {
-    height: 70vh;
+    height: auto;
   }
   .header__title {
-    height: 80vh;
+    margin-top: 5rem;
+    /* height: 80vh; */
   }
   .header__title .btn {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   /* Features */
