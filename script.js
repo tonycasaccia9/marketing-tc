@@ -2,6 +2,7 @@
 
 import * as model from "./model.js";
 import contactView from "./views/contactView.js";
+import navToggleView from "./views/navToggleView.js";
 
 // Elements
 const header = document.querySelector(".header");
@@ -11,6 +12,7 @@ const overview = document.querySelector("#overview");
 const navLinks = document.querySelector(".nav__links");
 const navItem = document.querySelectorAll(".nav__link");
 const allSections = document.querySelectorAll(".section");
+const navToggle = document.querySelector(".nav__toggle");
 
 // Event handlers
 document.querySelector("body").addEventListener("click", function (e) {});
