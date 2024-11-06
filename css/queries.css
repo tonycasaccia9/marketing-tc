@@ -124,12 +124,19 @@
 }
 
 @media (max-width: 850px) {
+  .nav {
+  }
+
   /* Hero */
 
   .header {
-    height: 50vh;
+    /* height: 50vh; */
   }
 
+  .header__title {
+    margin-top: 14rem;
+    margin-bottom: 14rem;
+  }
   .header__image {
     padding: 4rem;
     height: 4rem;
@@ -259,6 +266,7 @@
   }
   .header__title {
     margin-top: 5rem;
+    margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;

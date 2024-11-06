@@ -2,7 +2,6 @@
 
 .header {
   background-color: var(--color-background);
-  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +12,8 @@
 }
 
 .header__title {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  height: auto;
   transform: translateY(-6rem);
   max-width: 115rem;
   display: grid;
@@ -21,6 +21,8 @@
   row-gap: 3rem;
   align-content: center;
   justify-content: center;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
 }
 
 .header__title > :last-child {
