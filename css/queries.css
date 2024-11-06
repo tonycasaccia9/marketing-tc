@@ -150,6 +150,12 @@
     padding: 0.4rem 1rem;
   }
 
+  /* Form */
+
+  body .modal__content {
+    max-width: 200px;
+    padding: 5rem 10rem 10rem 10rem;
+  }
   /* About */
 
   #section--1 .about__content {
@@ -267,6 +273,13 @@
 
   .header__title .btn {
     font-size: 1.4rem;
+  }
+
+  /* Form */
+
+  body .modal__content {
+    max-width: 200px;
+    padding: 5rem 8rem 8rem 8rem;
   }
 
   /* Features */

@@ -46,15 +46,23 @@
   margin: 20rem auto;
   padding: 10rem 20rem 20rem 20rem;
   border-radius: 8px;
-  width: 90%;
-  max-width: 400px;
+  /* width: 90%; */
+  max-width: 200px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   z-index: 1001;
 }
 
 .modal__content h2 {
   font-size: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 2.6rem;
+}
+
+.contact-info__detail {
+  font-size: 1.4rem;
+  width: 200px;
 }
 
 .form__label {
@@ -62,7 +70,9 @@
 }
 
 .btn--form {
-  padding: 2rem;
+  padding: 1.4rem;
+  margin-top: 2rem;
+  display: none;
 }
 
 label {
