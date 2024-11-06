@@ -1,5 +1,8 @@
 "use strict";
 
+import * as model from "./model.js";
+import contactView from "./views/contactView.js";
+
 // Elements
 const header = document.querySelector(".header");
 const nav = document.querySelector(".nav");
@@ -22,8 +25,9 @@ const revealSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.2,
+  threshold: 0.15,
 });
+
 allSections.forEach(function (section) {
   section.classList.add("section--hidden");
   sectionObserver.observe(section);
@@ -35,7 +39,7 @@ allSections.forEach(function (section) {
 const navHeight = nav.getBoundingClientRect().height;
 const stickyNav = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
+
   if (!entry.isIntersecting) {
     nav.classList.add("sticky");
   } else nav.classList.remove("sticky");
@@ -62,7 +66,7 @@ const hoverHandler = function (e) {
         el.style.opacity = this;
       }
     });
-    logo.style.opacity = this;
+    // logo.style.opacity = this;
   }
 };
 navLinks.addEventListener("mouseover", hoverHandler.bind(0.5));
@@ -73,16 +77,22 @@ navLinks.addEventListener("mouseout", hoverHandler.bind(1));
 // Underline effect
 const underline = document.querySelector(".underline");
 window.addEventListener("load", function (e) {
+  if (!underline) return;
   underline.classList.add("underline--active");
 });
 
 //////////////////////////////////////////
 // Jump to sections
-navLinks.addEventListener("click", function (e) {
-  e.preventDefault();
-  const id = e.target.getAttribute("href");
-  document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-});
+
+nav.querySelectorAll(".nav__item").forEach((item) =>
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    const id = e.target.getAttribute("href");
+    if (!id) return;
+
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  })
+);
 
 //////////////////////////////////////////
 // Slider
@@ -171,19 +181,32 @@ const tabsBtns = document.querySelectorAll(".tabs__btn");
 const tabsContent = document.querySelectorAll(".tabs__content");
 
 // Tab btn active
-tabsBtnsContainer.addEventListener("click", function (e) {
-  e.preventDefault();
-  if (!e.target.classList.contains("tabs__btn")) return;
-  tabsBtns.forEach(function (btn) {
-    btn.classList.remove("tabs__btn--active");
-    e.target.classList.add("tabs__btn--active");
-  });
+// tabsBtnsContainer.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   if (!e.target.classList.contains("tabs__btn")) return;
+//   tabsBtns.forEach(function (btn) {
+//     btn.classList.remove("tabs__btn--active");
+//     e.target.classList.add("tabs__btn--active");
+//   });
 
-  // Switch active tab content
-  tabsContent.forEach(function (tab) {
-    tab.classList.remove("tabs__content--active");
-  });
-  document
-    .querySelector(`.tabs__content--${e.target.dataset.tab}`)
-    .classList.add("tabs__content--active");
-});
+//   // Switch active tab content
+//   tabsContent.forEach(function (tab) {
+//     tab.classList.remove("tabs__content--active");
+//   });
+//   document
+//     .querySelector(`.tabs__content--${e.target.dataset.tab}`)
+//     .classList.add("tabs__content--active");
+// });
+
+//////////////////////////////////////
+// Controller
+
+const controlSubmitForm = function (data) {
+  model.addResponse(data);
+  console.log(model.state);
+};
+
+const init = function () {
+  contactView.addHandlerSubmitForm(controlSubmitForm);
+};
+init();

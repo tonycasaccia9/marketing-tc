@@ -1,0 +1,63 @@
+/* Nav */
+
+.logo {
+  max-width: 40rem;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  padding: 2rem 6rem;
+  z-index: 100;
+  width: 100%;
+}
+
+.nav__toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav__logo {
+  height: 4.5rem;
+  transition: all 0.3s;
+}
+
+.nav__item {
+  margin-left: 4rem;
+}
+
+.nav__link,
+.nav__link:visited {
+  font-size: 1.9rem;
+  font-weight: 400;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: all, 0.3s;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav.sticky {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+  padding: 0 6rem 0 6rem;
+  box-sizing: border-box;
+}

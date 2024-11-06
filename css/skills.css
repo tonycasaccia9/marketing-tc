@@ -1,0 +1,48 @@
+/* Features / Section 2 */
+
+#section--2 {
+  background-color: white;
+}
+
+.features {
+  margin-top: 18rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 6rem;
+  column-gap: 0rem;
+}
+
+.features__description {
+  align-self: flex-start;
+  justify-self: center;
+  width: 60%;
+}
+
+.features__heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.features__description p {
+  grid-column: 1 / 3;
+  font-size: 2rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  padding: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--color-light);
+  margin-bottom: 2rem;
+}
+
+.icon svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  stroke: var(--color-accent);
+}

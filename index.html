@@ -4,19 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tony Casaccia</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script type="module" src="script.js"></script>
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="heading">
       <nav class="nav">
-        <img class="logo" src="" alt="#" />
+        <img
+          class="logo nav__item"
+          src="/img/tc-logo.png"
+          alt="logo"
+          href="#heading"
+        />
+
+        <div class="nav__toggle" id="navToggle">☰</div>
+
         <ul class="nav__links">
           <li class="nav__item">
             <a class="nav__link" href="#section--1">About Me</a>
@@ -25,27 +39,24 @@
             <a class="nav__link" href="#section--2">My Skills</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#section--3">My Experience</a>
+            <a class="nav__link" href="#section--3">Portfolio</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#section--4">Tabs</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link btn btn--show-modal">Contact Me</a>
+            <div class="btn btn--show-modal nav__link">Contact Me</div>
           </li>
         </ul>
       </nav>
       <!-- Hero Section -->
       <div class="header__title">
-        <h1 class="hero__heading">
-          A better way to
-          <span class="highlight underline">show up</span> online
-        </h1>
+        <h1 class="hero__heading">A better way to show up online</h1>
         <p class="hero-description">
           Helping companies find their strongest digital footing through web
         </p>
         <div class="button__container">
-          <a class="btn--learn-more btn">Learn More</a>
+          <a class="btn--show-modal btn">Contact Me</a>
           <!-- <a class="btn__secondary">Learn More</a> -->
         </div>
 
@@ -72,22 +83,27 @@
     <section class="section" id="section--1">
       <div class="section__title">
         <h2 class="eyebrow">About Me</h2>
-        <h3 class="section__heading">Hi! Welcome to my Website</h3>
+        <h3 class="section__heading">Welcome to my Website! 🥳</h3>
       </div>
 
       <div class="about__content">
         <div class="about__text">
-          <h4 class="about__heading">
+          <!-- <h4 class="about__heading">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-          </h4>
+          </h4> -->
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, maxime
-            corporis quo tenetur vero ut nemo facilis, eum cum perferendis
-            reprehenderit autem enim illo illum nostrum incidunt, modi obcaecati
-            cupiditate? Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Quos blanditiis, quasi fugit delectus velit voluptatum
-            deleniti tempore quis nihil voluptates illo alias veritatis, rem,
-            perspiciatis nisi laudantium dolor illum minima?
+            Hi! I’m Tony Casaccia, a digital marketer with a focus on web
+            development. To prove it, I hand-coded this site using vanilla
+            JavaScript, HTML, and CSS. My goal is simple: Bring together all the
+            skills I’ve developed over my career into one project to showcase
+            for you! <br />
+            <br />
+            Growing up, the web was like a black box to me. I didn’t know what
+            happened behind the scenes when I typed something into Google,
+            clicked a button, or submitted a form. So, I made it my mission to
+            build my career around something that used to intimidate me. Kind of
+            like Batman... but without the violence. Anyway, thanks for stopping
+            by—I hope you enjoy exploring this site!
           </p>
         </div>
         <img class="about__image" src="/img/tony-casaccia-roster.png" />
@@ -100,13 +116,11 @@
       <div class="section__title">
         <h2 class="eyebrow">My Skills</h2>
         <h3 class="section__heading">
-          Lorem ipsum dolor sit amet, consectetur hebh pisi cing elit. Sed
-          magnam n
+          Areas I've developed expertise in over the past 4+ years.
         </h3>
       </div>
 
       <div class="features">
-        <img src="" alt="" />
         <div class="features__description">
           <div class="icon">
             <svg
@@ -120,16 +134,17 @@
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
               />
             </svg>
           </div>
           <h4 class="features__heading">
-            Lorem ipsum dolor sit amet consectetur
+            Web Strategy & User Journey Optimization
           </h4>
           <p class="features__text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
-            nesciunt. Totam sit sint repudiandae illum. Quis nulla
+            I develop multi-layered web experiences aligned with marketing
+            campaigns and activities. I effectively collaborate with
+            stakeholders to bring their visions to life on the web.
           </p>
         </div>
 
@@ -150,17 +165,15 @@
               />
             </svg>
           </div>
-          <h4 class="features__heading">
-            Lorem ipsum dolor sit amet consectetur
-          </h4>
+          <h4 class="features__heading">SEO & Organic Strategy</h4>
           <p class="features__text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
-            nesciunt. Totam sit sint repudiandae illum. Quis nulla
+            I think critically about what drives traffic from search engines.
+            I've lead on all things keyword research and technical/on-page SEO,
+            and have driven 36% increase in page 1 ranked keywords and a 47.2%
+            boost in organic search traffic.
           </p>
         </div>
-        <img src="" alt="" />
 
-        <img src="" alt="" />
         <div class="features__description">
           <div class="icon">
             <svg
@@ -174,16 +187,41 @@
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
               />
             </svg>
           </div>
-          <h4 class="features__heading">
-            Lorem ipsum dolor sit amet consectetur
-          </h4>
+          <h4 class="features__heading">Data Analytics</h4>
           <p class="features__text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
-            nesciunt. Totam sit sint repudiandae illum. Quis nulla
+            I utilize analytics platforms to derive insights that lead to a
+            14.2% increase in engagements and a 64% boost in conversions,
+            optimizing web performance effectively.
+          </p>
+        </div>
+
+        <div class="features__description">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+              />
+            </svg>
+          </div>
+          <h4 class="features__heading">Technical Skills</h4>
+          <p class="features__text">
+            I've immersed myself in developing my skills in front-end coding
+            languages. This has allowed me to better understand my industry, and
+            gain expertise that fuels better recommendations and decision
+            making.
           </p>
         </div>
       </div>
@@ -193,15 +231,360 @@
 
     <section class="section" id="section--3">
       <div class="section__title">
-        <h2 class="eyebrow">Eyebrow</h2>
+        <h2 class="eyebrow">My Portfolio</h2>
         <h3 class="section__heading">
-          About me sections to find out some more about me please
+          Here are some of my favorite front-end language projects!
         </h3>
       </div>
       <div class="slider">
-        <div class="slide"><img src="/img/tc_logo.png" /></div>
-        <div class="slide"><img src="/img/tc_logo.png" /></div>
-        <div class="slide"><img src="/img/tc_logo.png" /></div>
+        <div class="slide">
+          <div class="slider__content">
+            <div class="slide__block--left">
+              <img class="slider__img" src="/img/pokemon-game.png" />
+            </div>
+            <div class="slider__text--block">
+              <h3 class="slider__heading">Pokemon Deck Building App</h3>
+              <p class="slider__text">
+                This was a really fun original project! This app brings Pokémon
+                to life by fetching data from the PokeAPI and dynamically
+                updating the UI. Built with MVC architecture and ES6 Class
+                structure, it features responsive design and showcases data
+                handling and API integration.
+              </p>
+              <ul class="features__list">
+                <li class="features__item">
+                  <svg
+                    viewBox="-2.4 -2.4 28.80 28.80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke="#5c5c5c"
+                      stroke-width="0.144"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                      ></circle>
+                      <path
+                        d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                  Javascript
+                </li>
+                <li class="features__item">
+                  <svg
+                    viewBox="-2.4 -2.4 28.80 28.80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke="#5c5c5c"
+                      stroke-width="0.144"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                      ></circle>
+                      <path
+                        d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                  MVC Architecture
+                </li>
+                <li class="features__item">
+                  <svg
+                    viewBox="-2.4 -2.4 28.80 28.80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke="#5c5c5c"
+                      stroke-width="0.144"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                      ></circle>
+                      <path
+                        d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                  API Calls
+                </li>
+                <li class="features__item">
+                  <svg
+                    viewBox="-2.4 -2.4 28.80 28.80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke="#5c5c5c"
+                      stroke-width="0.144"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                      ></circle>
+                      <path
+                        d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                  Responsive UI
+                </li>
+              </ul>
+              <div class="slider__btn--container">
+                <a
+                  class="btn"
+                  href="https://pokemon-game-tonyc.netlify.app/"
+                  target="_blank"
+                  >Play Now</a
+                >
+                <a
+                  class="button__container btn__secondary"
+                  href="https://github.com/tonycasaccia9/pokemon-game"
+                  target="_blank"
+                  >Git Repository</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slider__content">
+            <div class="slide__block--left">
+              <img class="slider__img" src="/img/forkify.png" />
+            </div>
+            <div class="slider__text--block">
+              <h3 class="slider__heading">
+                Forkify: Recipe Search Application
+              </h3>
+              <p class="slider__text">
+                This application was a part of my
+                <a
+                  href="https://veritas.udemy.com/course/the-complete-javascript-course/"
+                  ><span class="slider__text">
+                    Javascript certification course
+                  </span>
+                </a>
+                on Udemy. It allows recipe searches with detailed instructions,
+                adjustable servings, and bookmarking for quick access. The
+                project highlights JavaScript fundamentals, asynchronous
+                programming, and a clean UI.
+              </p>
+              <ul class="features__list">
+                <li class="features__item">
+                  <svg
+                    viewBox="-2.4 -2.4 28.80 28.80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke="#5c5c5c"
+                      stroke-width="0.144"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                      ></circle>
+                      <path
+                        d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                  Javascript
+                </li>
+                <li class="features__item">
+                  <svg
+                    viewBox="-2.4 -2.4 28.80 28.80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke="#5c5c5c"
+                      stroke-width="0.144"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                      ></circle>
+                      <path
+                        d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                  MVC Architecture
+                </li>
+                <li class="features__item">
+                  <svg
+                    viewBox="-2.4 -2.4 28.80 28.80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke="#5c5c5c"
+                      stroke-width="0.144"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                      ></circle>
+                      <path
+                        d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                  API Calls
+                </li>
+                <li class="features__item">
+                  <svg
+                    viewBox="-2.4 -2.4 28.80 28.80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke="#5c5c5c"
+                      stroke-width="0.144"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                      ></circle>
+                      <path
+                        d="M8.5 12.5L10.5 14.5L15.5 9.5"
+                        stroke="#0056b3"
+                        stroke-width="1.7759999999999998"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                  Search and Upload
+                </li>
+              </ul>
+              <div class="slider__btn--container">
+                <a
+                  class="btn"
+                  href="https://forkify-tonyc.netlify.app/"
+                  target="_blank"
+                  >Play Now</a
+                >
+                <a
+                  class="btn__secondary"
+                  href="https://github.com/tonycasaccia9/forkify-project"
+                  target="_blank"
+                  >Git Repository</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="slide"><img src="/img/tc_logo.png" /></div> -->
         <button class="slider__btn slider__btn--left">&larr;</button>
 
         <button class="slider__btn slider__btn--right">&rarr;</button>
@@ -210,6 +593,8 @@
     </section>
 
     <!-- Tabbed Section -->
+
+    <!--     
     <section class="section" id="section--4">
       <div class="section__title">
         <h2 class="eyebrow">Eyebrow</h2>
@@ -310,9 +695,42 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <script src="script.js"></script>
-    <!-- Linking the JavaScript file -->
+    <section class="window-contact">
+      <div id="modal" class="modal hidden">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+          <h2>Contact Me</h2>
+          <form id="contactForm" class="form">
+            <label class="form__label" for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label class="form__label" for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <div class="btn__container">
+              <button type="submit" class="btn btn--form">Send</button>
+              <div type="button" id="closeModal" class="button--close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
