@@ -27,7 +27,7 @@ class NavToggleView {
   }
 
   addhandlerToggle() {
-    ["mouseenter", "click"].forEach((ev, i) => {
+    ["", "click"].forEach((ev, i) => {
       this.navToggle.addEventListener(ev, this.toggleNav.bind(this));
     });
 

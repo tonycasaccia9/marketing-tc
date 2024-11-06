@@ -56,7 +56,7 @@
     position: absolute;
 
     top: 109.18px;
-    left: 10;
+    /* left: 10; */
     right: 0;
     background-color: #ffff;
     opacity: 0.9;
@@ -190,6 +190,7 @@
 
   #section--2 .icon {
     justify-self: center;
+    align-self: center;
   }
   /* Slider */
 
@@ -246,7 +247,7 @@
   /* Header */
 
   .header {
-    height: 80vh;
+    height: 60vh;
   }
   .header__title {
     height: 80vh;
@@ -265,6 +266,17 @@
   .slider__btn {
     width: 20px;
     height: 20px;
+    font-size: 1.4rem;
+  }
+
+  #section--3 .features__item {
+    margin-left: 0px;
+  }
+
+  #section--3 .btn__secondary {
+    font-size: 1.4rem;
+  }
+  #section--3 .btn {
     font-size: 1.4rem;
   }
 }

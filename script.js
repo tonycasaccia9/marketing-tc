@@ -3,6 +3,7 @@
 import * as model from "./model.js";
 import contactView from "./views/contactView.js";
 import navToggleView from "./views/navToggleView.js";
+import sliderView from "./views/sliderView.js";
 
 // Elements
 const header = document.querySelector(".header");
@@ -31,7 +32,7 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 });
 
 allSections.forEach(function (section) {
-  section.classList.add("section--hidden");
+  // section.classList.add("section--hidden");
   sectionObserver.observe(section);
 });
 
