@@ -24,7 +24,6 @@
   /* Slider */
   .slider__content {
     max-width: 800px;
-    /* background-color: antiquewhite; */
   }
 
   .slider__text {
@@ -82,8 +81,8 @@
     align-items: center;
     justify-content: center;
     max-width: 400px;
-    /* background-color: antiquewhite; */
-    border-radius: 10px;
+    border-radius: 2rem;
+    padding: 20px;
   }
 
   .slider__heading {
@@ -204,8 +203,14 @@
   }
 
   .slider__btn {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
+    font-size: 1.4rem;
+  }
+
+  .slider__img {
+    max-width: 150px;
+    margin-bottom: 1.8rem;
   }
 }
 
