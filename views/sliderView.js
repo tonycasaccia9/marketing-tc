@@ -22,8 +22,6 @@ class SliderView {
       this.headings.forEach((h, i) => {
         h.textContent = this.longHeadings[i];
       });
-      console.log("long heading");
-      //   this.forkifyHeading.textContent = "Forkify Recipe App";
     }
   }
 }

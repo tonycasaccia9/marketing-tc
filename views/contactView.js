@@ -12,10 +12,12 @@ class ContactView {
 
   openModal = function () {
     this.modal.classList.remove("hidden");
+    this.overlay.classList.remove("hidden");
   };
 
   closeModal = function () {
     this.modal.classList.add("hidden");
+    this.overlay.classList.add("hidden");
   };
 
   addHandlerOpenWindow() {
@@ -39,7 +41,6 @@ class ContactView {
       const dataArr = [...new FormData(this.parentEl)];
       const data = Object.fromEntries(dataArr);
 
-      console.log(data);
       this.closeModal();
       handler(data);
     });

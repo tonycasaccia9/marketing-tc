@@ -1,18 +1,21 @@
 /* Nav */
 
 .logo {
-  max-width: 40rem;
+  max-width: 30rem;
   cursor: pointer;
+  margin-left: 0;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 9rem;
+  height: 7rem;
   padding: 2rem 6rem;
   z-index: 100;
   width: 100%;
+
+  /* background-color: antiquewhite; */
 }
 
 .nav__toggle {
@@ -24,7 +27,7 @@
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 6rem;
   list-style: none;
 }
 
@@ -34,7 +37,7 @@
 }
 
 .nav__item {
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
 }
 
 .nav__link,
@@ -53,11 +56,17 @@
   list-style: none;
 }
 
+.nav.sticky .nav__links {
+  top: 100%; /* Places the links directly below the sticky nav */
+}
+
 .nav.sticky {
   position: fixed;
   top: 0;
   background-color: #ffffff;
   opacity: 0.8;
-  padding: 0 6rem 0 6rem;
+
+  padding: 5.4rem 6rem;
   box-sizing: border-box;
+  height: 8.4rem;
 }
