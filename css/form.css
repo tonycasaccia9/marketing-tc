@@ -42,9 +42,11 @@
 
 .modal__content {
   position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: white;
   margin: 20rem auto;
-  padding: 10rem 20rem 20rem 20rem;
+  padding: 10rem 20rem 20rem 14rem;
   border-radius: 8px;
   /* width: 90%; */
   max-width: 200px;
@@ -54,7 +56,6 @@
 
 .modal__content h2 {
   font-size: 2.6rem;
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 2.6rem;
@@ -67,6 +68,13 @@
 
 .form__label {
   font-size: 2rem;
+}
+.form__info {
+  margin-bottom: 3rem;
+}
+.form__icon {
+  height: 30px;
+  width: 30px;
 }
 
 .btn--form {

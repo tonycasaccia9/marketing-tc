@@ -32,7 +32,7 @@ class NavToggleView {
     });
 
     ["click"].forEach((ev) =>
-      this.parentEl.addEventListener(ev, this.hideNav.bind(this))
+      this.parentEl.addEventListener(ev, this.toggleNav.bind(this))
     );
   }
 }

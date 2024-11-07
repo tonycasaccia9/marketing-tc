@@ -287,7 +287,8 @@
 
   body .modal__content {
     max-width: 200px;
-    padding: 5rem 8rem 8rem 8rem;
+    padding: 5rem 8rem 8rem 4rem;
+    margin-top: 8rem;
   }
 
   /* Features */

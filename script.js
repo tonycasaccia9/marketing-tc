@@ -94,7 +94,15 @@ nav.querySelectorAll(".nav__item").forEach((item) =>
     const id = e.target.getAttribute("href");
     if (!id) return;
 
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    const targetSection = document.querySelector(id);
+    const navHeight = nav.offsetHeight;
+    console.log(navHeight);
+
+    const scrollPosition = targetSection.offsetTop - navHeight;
+
+    window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+
+    // document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   })
 );
 
