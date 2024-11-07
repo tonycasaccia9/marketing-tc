@@ -12,7 +12,7 @@
   }
 
   .header__title .btn {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   /* Slider */
@@ -147,6 +147,9 @@
     grid-column: 1 / 2;
   }
 
+  .header__title .btn__secondary {
+    font-size: 1.4rem;
+  }
   .header__title .btn {
     font-size: 1.2rem;
     padding: 0.4rem 1rem;
@@ -274,6 +277,7 @@
 
   .header__image {
     margin-top: 3rem;
+    margin-left: 0;
     /* display: none; */
   }
 
