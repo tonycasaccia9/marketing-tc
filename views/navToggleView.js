@@ -29,11 +29,8 @@ class NavToggleView {
   addhandlerToggle() {
     ["click"].forEach((ev, i) => {
       this.navToggle.addEventListener(ev, this.toggleNav.bind(this));
+      this.parentEl.addEventListener(ev, this.toggleNav.bind(this));
     });
-
-    ["click"].forEach((ev) =>
-      this.parentEl.addEventListener(ev, this.toggleNav.bind(this))
-    );
   }
 }
 
