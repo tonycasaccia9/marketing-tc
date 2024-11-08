@@ -43,6 +43,7 @@ allSections.forEach(function (section) {
 const navHeight = nav.getBoundingClientRect().height;
 const stickyNav = function (entries, observer) {
   const [entry] = entries;
+  console.log(entry);
 
   if (!entry.isIntersecting) {
     nav.classList.add("sticky");
@@ -51,7 +52,7 @@ const stickyNav = function (entries, observer) {
 
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
-  threshold: 0,
+  threshold: 0.15,
   rootMargin: `-${navHeight}px`,
 });
 headerObserver.observe(header);
@@ -87,7 +88,6 @@ window.addEventListener("load", function (e) {
 
 //////////////////////////////////////////
 // Jump to sections
-
 nav.querySelectorAll(".nav__item").forEach((item) =>
   item.addEventListener("click", function (e) {
     e.preventDefault();
@@ -95,12 +95,17 @@ nav.querySelectorAll(".nav__item").forEach((item) =>
     if (!id) return;
 
     const targetSection = document.querySelector(id);
-    const navHeight = nav.offsetHeight;
-    console.log(navHeight);
+    const navHeight = nav.getBoundingClientRect().height;
+    console.log(targetSection, id);
+    const yOffsetInitial = window.pageYOffset === 0 ? -navHeight + 10 : 0;
+    const yOffset = -navHeight;
+    const yPosition =
+      targetSection.getBoundingClientRect().top +
+      (window.pageYOffset + yOffsetInitial) +
+      yOffset;
+    console.log(window.pageYOffset);
 
-    const scrollPosition = targetSection.offsetTop - navHeight;
-
-    window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+    window.scrollTo({ top: yPosition, behavior: "smooth" });
 
     // document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   })
