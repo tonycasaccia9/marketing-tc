@@ -33,7 +33,7 @@ Instead, 1rem = 1 em = 16px */
   }
 }
 
-@media (max-width: 985px) {
+@media (max-width: 1000px) {
   /* Nav */
 
   .nav {
