@@ -30,8 +30,8 @@
 }
 
 .slide__content:hover {
-  transform: scale(1.06); /* Slight scale-up effect */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Adds depth with a shadow */
+  transform: scale(1.06);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .slider__content {
@@ -45,12 +45,12 @@
   row-gap: 2rem;
   column-gap: 6rem;
   width: 80%;
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation for hover */
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .slider__content:hover {
-  transform: scale(1.02); /* Slight scale-up effect */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 .slider__text {
   font-size: 1.8rem;
@@ -58,7 +58,7 @@
 }
 
 .features__list {
-  margin: 0; /* Reset margin */
+  margin: 0;
   padding: 0;
 
   display: flex;
@@ -113,7 +113,7 @@
   /* grid-row: 1 / span 2; */
   max-width: 300px;
   border-radius: 1rem;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Light shadow for the image */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .slider__btn {
@@ -122,23 +122,23 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 50%; /* Centers vertically */
-  z-index: 10; /* Keeps the button above other elements */
-  transform: translateY(-50%); /* Centers the button vertically */
-  width: 60px; /* Adjust size as needed */
-  height: 60px; /* Adjust size as needed */
+  top: 50%;
+  z-index: 10;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background-color: var(--color-accent); /* Dark greenish color */
-  color: #f8f8f5; /* Light color for arrows */
-  font-size: 2rem; /* Arrow size */
+  background-color: var(--color-accent);
+  color: #f8f8f5;
+  font-size: 2rem;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds some depth */
-  text-decoration: none; /* Removes underline from the link */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
 }
 
 .slider__btn:hover {
-  background-color: var(--color-accent); /* Darker shade for hover effect */
+  background-color: var(--color-accent);
 }
 
 .slider__btn--container {
@@ -152,7 +152,7 @@
 }
 
 .slider__btn:hover .arrow {
-  transform: translateX(5px); /* Slight animation to slide the arrow on hover */
+  transform: translateX(5px);
 }
 
 .slider__btn--right {
@@ -180,22 +180,22 @@
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  margin-right: 1.75rem; /* Space between dots */
+  margin-right: 1.75rem;
   cursor: pointer;
   transition: all 0.5s;
-  display: inline-block; /* Ensures it behaves as an inline element */
+  display: inline-block;
 }
 
 /* Optional hover effect for visual feedback */
 .dots__dot:hover {
-  background-color: rgba(199, 199, 199, 1); /* Full opacity on hover */
-  transform: scale(1.1); /* Slightly increase size on hover */
+  background-color: rgba(199, 199, 199, 1);
+  transform: scale(1.1);
 }
 
 /* Optional active state for a selected dot */
 .dots__dot.active {
-  background-color: #4a5845; /* Use your dark greenish color for the active dot */
-  opacity: 1; /* Full opacity for the active dot */
+  background-color: #4a5845;
+  opacity: 1;
 }
 
 .dots__dot:last-child {

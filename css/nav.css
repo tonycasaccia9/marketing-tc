@@ -57,7 +57,7 @@
 }
 
 .nav.sticky .nav__links {
-  top: 100%; /* Places the links directly below the sticky nav */
+  top: 100%;
 }
 
 .nav.sticky {

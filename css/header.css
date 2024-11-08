@@ -51,8 +51,8 @@ h1 {
   margin-left: 4rem;
   grid-column: 2 / 3;
   grid-row: 1 / span 4;
-  opacity: 0; /* Start invisible */
-  transform: translateX(70%); /* Start off-screen to the right */
+  opacity: 0;
+  transform: translateX(70%);
   animation: slideIn 0.7s ease-in-out forwards;
   background-color: var(--color-light);
   padding: 10rem;
@@ -63,8 +63,8 @@ h1 {
 
 @keyframes slideIn {
   to {
-    transform: translateX(0); /* End at its original position */
-    opacity: 1; /* Fade in as it slides */
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -99,7 +99,7 @@ h1 {
   height: 12px;
   background-color: var(--color-accent);
   transform: scaleX(0);
-  transform-origin: left; /* Start the transition from the left */
+  transform-origin: left;
   transition: transform 0.3s ease;
 }
 

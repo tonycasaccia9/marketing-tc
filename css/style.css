@@ -10,12 +10,12 @@
 @import url("/css/skills.css");
 
 :root {
-  --color-background: #ffffff; /* Soft lavender for a warm, inviting look */
+  --color-background: #ffffff;
   --color-accent: #0056b3;
   --color-accent-background: #a6c6e9;
-  --color-text: #333333; /* Dark grey-green for text, ensuring readability */
-  --color-light: #e3f6ff; /* Pure white for clean elements */
-  --color-dark: rgba(0, 0, 0, 0.7); /* Darker shade for shadows or text */
+  --color-text: #333333;
+  --color-light: #e3f6ff;
+  --color-dark: rgba(0, 0, 0, 0.7);
   --gradient-primary: linear-gradient(to top left, #5f76b7, #9ac1e4);
   --gradient-secondary: linear-gradient(to top left, #c3db5c, #8f9c58);
 }

@@ -1,3 +1,6 @@
+/* rem and em do Not depend on html font-size in media queries
+Instead, 1rem = 1 em = 16px */
+
 @media (max-width: 1250px) {
   /* Header */
   .nav__link,
@@ -109,7 +112,7 @@
   }
 
   .dots {
-    display: none;
+    /* display: none; */
   }
   .slider__btn--container {
     margin: auto;
