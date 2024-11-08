@@ -176,6 +176,7 @@ Instead, 1rem = 1 em = 16px */
 
   #section--1 .about__content {
     display: grid;
+    row-gap: 4.4rem;
 
     /*     
     flex-direction: column;
