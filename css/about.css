@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 8rem;
+  gap: 8rem;
   margin: 0 auto;
 }
 
@@ -25,4 +25,5 @@
 
 .about__image {
   border-radius: 8px;
+  max-width: 30rem;
 }
