@@ -171,13 +171,21 @@ Instead, 1rem = 1 em = 16px */
     max-width: 200px;
     padding: 5rem 14rem 10rem 10rem;
   }
+
   /* About */
 
   #section--1 .about__content {
+    display: grid;
+
+    /*     
     flex-direction: column;
     gap: 6rem;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-start; */
+  }
+
+  #section--1 .about__text {
+    grid-row: 2;
   }
 
   #section--1 .about__content p {
@@ -187,6 +195,7 @@ Instead, 1rem = 1 em = 16px */
   }
 
   #section--1 .about__image {
+    grid-row: 1;
     border-radius: 8px;
     max-width: 160px;
   }
@@ -310,6 +319,9 @@ Instead, 1rem = 1 em = 16px */
   }
   /* Features */
 
+  #section--2 .features {
+    margin-top: 6rem;
+  }
   #section--2 .features__description {
     width: 100%;
   }
