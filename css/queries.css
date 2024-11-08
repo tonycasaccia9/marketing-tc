@@ -112,7 +112,7 @@ Instead, 1rem = 1 em = 16px */
   }
 
   .dots {
-    /* display: none; */
+    display: none;
   }
   .slider__btn--container {
     margin: auto;
