@@ -12,10 +12,10 @@
   align-items: center;
   height: 7rem;
   padding: 2rem 6rem;
-  z-index: 100;
+  z-index: 1000;
   width: 100%;
 
-  /* background-color: antiquewhite; */
+  background-color: #ffffff;
 }
 
 .nav__toggle {
@@ -69,6 +69,7 @@
   padding: 5.4rem 6rem;
   box-sizing: border-box;
   height: 8.4rem;
+  z-index: 1000;
 }
 
 .button__container--nav {

@@ -64,6 +64,13 @@ Instead, 1rem = 1 em = 16px */
     border-radius: 2rem;
     padding-left: 0;
     border-radius: 0 0 0 2rem;
+    gap: 4rem;
+  }
+
+  .button__container--nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
   }
 
   .section__title {
@@ -294,6 +301,7 @@ Instead, 1rem = 1 em = 16px */
     max-width: 200px;
     padding: 5rem 10rem 8rem 4rem;
     margin-top: 8rem;
+    top: 16rem;
   }
 
   body .button--close {
