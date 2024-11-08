@@ -70,3 +70,8 @@
   box-sizing: border-box;
   height: 8.4rem;
 }
+
+.button__container--nav {
+  display: flex;
+  gap: 5rem;
+}
