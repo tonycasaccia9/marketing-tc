@@ -341,7 +341,11 @@ Instead, 1rem = 1 em = 16px */
   #section--3 .btn__secondary {
     font-size: 1.4rem;
   }
-  #section--3 .btn {
-    font-size: 1.4rem;
+  #section--3 .btn__secondary {
+    font-size: 1.2rem;
   }
+  #section--3 .btn {
+    font-size: 1.2rem;
+  }
+  /* .slider__btn--container; */
 }
