@@ -28,8 +28,9 @@ Instead, 1rem = 1 em = 16px */
     margin-bottom: 1.4rem;
   }
 
-  .slider__img {
-    max-width: 150px;
+  #section--3 .slider__img {
+    max-width: 200px;
+    height: 160px;
   }
 }
 
@@ -231,8 +232,9 @@ Instead, 1rem = 1 em = 16px */
   }
 
   .features__item svg {
-    height: 25px;
-    width: 25px;
+    height: 35px !important;
+    width: 35px !important;
+    flex-shrink: 0;
   }
 
   .slider__btn {
@@ -334,18 +336,20 @@ Instead, 1rem = 1 em = 16px */
     font-size: 1.4rem;
   }
 
+  #section--3 .slider__img {
+    width: 150px;
+    height: 120px;
+  }
+
   #section--3 .features__item {
     margin-left: 0px;
   }
 
   #section--3 .btn__secondary {
-    font-size: 1.4rem;
-  }
-  #section--3 .btn__secondary {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   #section--3 .btn {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   /* .slider__btn--container; */
 }
