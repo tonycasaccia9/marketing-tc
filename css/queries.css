@@ -82,11 +82,15 @@ Instead, 1rem = 1 em = 16px */
   }
 
   /* Slider */
+
+  .slider {
+    max-width: 500px;
+  }
   #section--3 .slider__content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 400px;
+    max-width: 480px;
     border-radius: 2rem;
     padding: 20px;
   }
@@ -119,13 +123,26 @@ Instead, 1rem = 1 em = 16px */
     margin-left: 20px;
   }
 
-  .dots {
-    display: none;
+  .slider__btn--left {
+    left: 1px;
   }
-  .slider__btn--container {
-    margin: auto;
-    display: flex;
-    justify-content: center;
+  .slider__btn--right {
+    right: 1px;
+  }
+  .slider__btn {
+    /* display: none; */
+    width: 40px;
+    height: 40px;
+  }
+
+  .dots {
+    /* display: none; */
+    bottom: 16px;
+  }
+
+  .dots__dot {
+    height: 1.8rem;
+    width: 1.8rem;
   }
 }
 
@@ -227,6 +244,9 @@ Instead, 1rem = 1 em = 16px */
 
   /* Slider */
 
+  .slider {
+    max-width: 350px;
+  }
   #section--3 .slider__heading {
     font-size: 1.8rem;
   }
@@ -238,13 +258,32 @@ Instead, 1rem = 1 em = 16px */
   }
 
   .slider__btn {
+    /* display: none; */
     width: 40px;
     height: 40px;
+  }
+
+  .slider__btn--right {
+    right: 1px;
+  }
+
+  .slider__btn--left {
+    left: 1px;
   }
 
   .slider__img {
     max-width: 150px;
     margin-bottom: 1.8rem;
+  }
+
+  .dots {
+    /* display: none; */
+    bottom: 16px;
+  }
+
+  .dots__dot {
+    height: 1.8rem;
+    width: 1.8rem;
   }
 }
 
@@ -288,7 +327,7 @@ Instead, 1rem = 1 em = 16px */
     height: auto;
   }
   .header__title {
-    margin-top: 5rem;
+    margin-top: 5.2rem;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -330,9 +369,17 @@ Instead, 1rem = 1 em = 16px */
   }
 
   /* Slider */
+  .slider {
+    max-width: 300px;
+  }
+  .slider__content {
+    box-shadow: none;
+    transform: scale(0.95);
+  }
+
   .slider__btn {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     font-size: 1.4rem;
   }
 
@@ -350,6 +397,9 @@ Instead, 1rem = 1 em = 16px */
   }
   #section--3 .btn {
     font-size: 1.1rem;
+  }
+  .dots {
+    bottom: 45px;
   }
   /* .slider__btn--container; */
 }
