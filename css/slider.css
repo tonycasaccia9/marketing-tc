@@ -29,11 +29,6 @@
   transition: transform 0.4s, box-shadow 0.4s;
 }
 
-.slide__content:hover {
-  transform: scale(1.06);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
 .slider__content {
   background-color: var(--color-background);
   padding: 60px;
@@ -50,8 +45,8 @@
 }
 
 .slider__content:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: scale(1.01);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 .slider__text {
   font-size: 1.8rem;
@@ -71,22 +66,24 @@
 }
 
 .features__item {
-  /* background-color: var(--color-accent-background); */
-  /* border-radius: 3rem;  */
   padding: 0.4rem 0rem 0.4rem 0rem;
   display: flex;
   align-items: center;
-  margin-right: 2rem;
+  width: 130px;
+
   gap: 4px;
+}
+
+.features__item-text {
   font-size: 1.2rem;
   font-weight: 600;
   color: black;
-  /* margin: 0.5em 0; */
 }
 
 .features__item svg {
   height: 40px;
   width: 40px;
+  flex-shrink: 0;
 }
 
 .checkmark {
@@ -125,7 +122,6 @@
   justify-content: center;
   position: absolute;
   top: 45%;
-  z-index: 10;
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
@@ -134,27 +130,17 @@
   color: #f8f8f5;
   font-size: 2rem;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: all 0.2s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
 }
 
 .slider__btn:hover {
-  background-color: var(--color-accent);
+  opacity: 0.8;
 }
 
 .slider__btn--container {
   display: flex;
   gap: 2rem;
-}
-
-.arrow {
-  display: inline-block;
-  transition: transform 0.3s;
-}
-
-.slider__btn:hover .arrow {
-  transform: translateX(5px);
 }
 
 .slider__btn--right {
@@ -187,25 +173,11 @@
   display: inline-block;
 }
 
-/* Optional hover effect for visual feedback */
-.dots__dot:hover {
-  background-color: rgba(199, 199, 199, 1);
-  transform: scale(1.1);
-}
-
-/* Optional active state for a selected dot */
-.dots__dot.active {
-  background-color: #4a5845;
-  opacity: 1;
-}
-
 .dots__dot:last-child {
   margin: 0;
 }
 
 .dots__dot--active {
-  /* background-color: #fff; */
   background-color: var(--color-accent);
-  /* background-color: #888; */
   opacity: 1;
 }

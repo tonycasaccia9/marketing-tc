@@ -251,10 +251,12 @@ Instead, 1rem = 1 em = 16px */
     font-size: 1.8rem;
   }
 
+  .features__item {
+    width: 100px;
+  }
   .features__item svg {
     height: 35px !important;
     width: 35px !important;
-    flex-shrink: 0;
   }
 
   .slider__btn {
@@ -377,6 +379,11 @@ Instead, 1rem = 1 em = 16px */
     transform: scale(0.95);
   }
 
+  .slider__content:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
   .slider__btn {
     width: 24px;
     height: 24px;
@@ -390,6 +397,10 @@ Instead, 1rem = 1 em = 16px */
 
   #section--3 .features__item {
     margin-left: 0px;
+  }
+  .features__item svg {
+    height: 30px !important;
+    width: 30px !important;
   }
 
   #section--3 .btn__secondary {
