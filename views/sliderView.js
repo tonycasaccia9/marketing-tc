@@ -3,11 +3,7 @@ class SliderView {
   sliderHeading = document.querySelector(".slider__heading");
   forkifyHeading = document.querySelector(".forkify__heading");
   headings = Array.from(document.querySelectorAll(".slider__heading"));
-  newHeadings = [
-    "Pokemon Deck Building App",
-    "Forkify Recipe App",
-    "To Do List",
-  ];
+  newHeadings = ["Pokemon Deck Builder", "Forkify Recipe App", "To Do List"];
   longHeadings = [
     "Pokemon Deck Building App",
     "Forkify: Recipe Search Application",
