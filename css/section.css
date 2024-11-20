@@ -1,7 +1,6 @@
 .section {
-  padding: 15rem 6rem;
+  padding: 12rem 0;
   transition: transform 1s, opacity 1s;
-  margin: auto;
 }
 
 .section__title {
@@ -15,9 +14,9 @@
   position: absolute;
   content: "";
   top: 50%;
-  left: -23rem;
-  height: 18rem;
-  width: 18rem;
+  left: -20rem;
+  height: 16rem;
+  width: 16rem;
   border-radius: 50%;
 
   background-color: var(--color-accent);
@@ -31,7 +30,7 @@
 }
 
 .eyebrow {
-  font-size: 2.8rem;
-  font-weight: 400;
+  font-size: 2.2rem;
+  font-weight: 500;
   color: var(--color-accent);
 }

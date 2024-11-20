@@ -47,11 +47,11 @@
   flex-direction: column;
   background-color: white;
   margin: auto;
-  top: 20rem;
-  padding: 10rem 20rem 20rem 14rem;
+  top: 14rem;
+  padding: 10rem 20rem 10rem 14rem;
   border-radius: 8px;
   /* width: 90%; */
-  max-width: 200px;
+  max-width: 600px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }

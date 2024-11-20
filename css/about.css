@@ -9,21 +9,13 @@
 }
 
 .about__content {
-  /* height: 30rem; */
-  max-width: 120rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8rem;
-  margin: 0 auto;
-}
-
-.about__content p {
-  margin-top: 4rem;
-  font-size: 2rem;
 }
 
 .about__image {
   border-radius: 8px;
-  max-width: 30rem;
+  max-width: 26rem;
 }
