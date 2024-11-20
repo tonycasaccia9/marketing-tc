@@ -203,6 +203,18 @@ Instead, 1rem = 1 em = 16px */
     margin-bottom: 3rem;
   }
 
+  .hero__img-block {
+    margin-left: 0;
+  }
+
+  .hero__image {
+    padding: 60px;
+  }
+
+  .hero__img-svg {
+    width: 60px;
+  }
+
   .hero__heading {
     text-align: center;
     font-size: 3.6rem;
@@ -210,6 +222,10 @@ Instead, 1rem = 1 em = 16px */
 
   .hero__description {
     text-align: center;
+  }
+
+  body .eyebrow {
+    font-size: 1.8rem;
   }
 
   /* slider */
@@ -312,10 +328,6 @@ Instead, 1rem = 1 em = 16px */
     margin-bottom: 0;
   }
 
-  body .hero__img-block {
-    margin-left: 0;
-  }
-
   .hero__image {
     padding: 35px;
   }
@@ -352,11 +364,12 @@ Instead, 1rem = 1 em = 16px */
   }
 
   /* Slider */
+
   #section--3 .slider {
-    max-width: 40rem;
+    max-width: 36rem;
   }
   #section--3 .slider__content {
-    width: 33rem;
+    width: 30rem;
     box-shadow: none;
     transform: scale(0.95);
   }
