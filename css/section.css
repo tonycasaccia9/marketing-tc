@@ -34,3 +34,7 @@
   font-weight: 500;
   color: var(--color-accent);
 }
+
+.section__short {
+  margin-bottom: 2rem !important;
+}

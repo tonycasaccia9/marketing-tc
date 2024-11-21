@@ -228,6 +228,10 @@ Instead, 1rem = 1 em = 16px */
     font-size: 1.8rem;
   }
 
+  body .section__short {
+    margin-bottom: 6rem !important;
+  }
+
   /* slider */
   #section--3 .slider {
     max-width: 50rem;
@@ -338,6 +342,10 @@ Instead, 1rem = 1 em = 16px */
 
   .header__title .btn {
     font-size: 1.4rem;
+  }
+
+  body .section__short {
+    margin-bottom: 4rem !important;
   }
 
   /* Form */
