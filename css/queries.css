@@ -43,6 +43,10 @@ Instead, 1rem = 1 em = 16px */
     gap: 4rem;
   }
 
+  .nav.sticky {
+    opacity: 1;
+  }
+
   .button__container--nav {
     display: flex;
     flex-direction: column;
